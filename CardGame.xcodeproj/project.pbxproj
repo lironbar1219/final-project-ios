@@ -1,0 +1,791 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD1917C82C726F9E0099F4A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1917C72C726F9E0099F4A1 /* AppDelegate.swift */; };
+		BD1917CA2C726F9E0099F4A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1917C92C726F9E0099F4A1 /* SceneDelegate.swift */; };
+		BD1917CC2C726F9E0099F4A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1917CB2C726F9E0099F4A1 /* ViewController.swift */; };
+		BD1917CF2C726F9E0099F4A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD1917CD2C726F9E0099F4A1 /* Main.storyboard */; };
+		BD1917D12C726FA20099F4A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD1917D02C726FA20099F4A1 /* Assets.xcassets */; };
+		BD1917D42C726FA20099F4A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD1917D22C726FA20099F4A1 /* LaunchScreen.storyboard */; };
+		BD4B2CDB2C7CE0B800119F23 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4B2CD92C7CE0B800119F23 /* MyTableViewCell.swift */; };
+		BD4B2CDC2C7CE0B800119F23 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD4B2CDA2C7CE0B800119F23 /* MyTableViewCell.xib */; };
+		BD6A92AE2C77DCCC0015AF80 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD6A92AD2C77DCCC0015AF80 /* GoogleService-Info.plist */; };
+		BD6A92B52C77E10C0015AF80 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = BD6A92B42C77E10C0015AF80 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		BD6A92BB2C77E10C0015AF80 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = BD6A92BA2C77E10C0015AF80 /* FirebaseAuth */; };
+		BD6A92C52C77E10C0015AF80 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BD6A92C42C77E10C0015AF80 /* FirebaseFirestore */; };
+		BD6A92CF2C77E4F40015AF80 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6A92CE2C77E4F40015AF80 /* LoginViewController.swift */; };
+		BD6A92D22C77E5550015AF80 /* FirebasePhoneAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6A92D12C77E5550015AF80 /* FirebasePhoneAuthManager.swift */; };
+		BD6A92D42C78D90E0015AF80 /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6A92D32C78D90E0015AF80 /* FirestoreManager.swift */; };
+		BDC0E7DF2C7BBE61000A62D6 /* Winner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC0E7DE2C7BBE61000A62D6 /* Winner.swift */; };
+		BDC0E7E12C7BCF79000A62D6 /* WinnersChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC0E7E02C7BCF79000A62D6 /* WinnersChartViewController.swift */; };
+		BDE4505A2C727F4800F61096 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE450592C727F4800F61096 /* LocalStorage.swift */; };
+		BDE4505D2C727FB600F61096 /* FilesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE4505C2C727FB600F61096 /* FilesHandler.swift */; };
+		BDE450622C72807200F61096 /* MessageUi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE450612C72807200F61096 /* MessageUi.swift */; };
+		BDE4506A2C72813700F61096 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE450692C72813700F61096 /* AppConstants.swift */; };
+		BDE4506C2C72826E00F61096 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE4506B2C72826E00F61096 /* NavigationController.swift */; };
+		BDE4506E2C7282BB00F61096 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE4506D2C7282BB00F61096 /* RegisterViewController.swift */; };
+		BDE450702C72830200F61096 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE4506F2C72830200F61096 /* MainScreenViewController.swift */; };
+		BDE450722C72833B00F61096 /* GameResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE450712C72833B00F61096 /* GameResultsViewController.swift */; };
+		BDE450752C729F2700F61096 /* Gamer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE450742C729F2700F61096 /* Gamer.swift */; };
+		BDE450AB2C732EA200F61096 /* 2_of_diamonds.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450772C732E9B00F61096 /* 2_of_diamonds.png */; };
+		BDE450AC2C732EA200F61096 /* 7_of_spades.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450782C732E9B00F61096 /* 7_of_spades.png */; };
+		BDE450AD2C732EA200F61096 /* 10_of_spades.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450792C732E9C00F61096 /* 10_of_spades.png */; };
+		BDE450AE2C732EA200F61096 /* 3_of_hearts.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE4507A2C732E9C00F61096 /* 3_of_hearts.png */; };
+		BDE450AF2C732EA200F61096 /* 11_of_hearts.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE4507B2C732E9C00F61096 /* 11_of_hearts.png */; };
+		BDE450B02C732EA200F61096 /* 13_of_hearts.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE4507C2C732E9C00F61096 /* 13_of_hearts.png */; };
+		BDE450B12C732EA200F61096 /* 9_of_spades.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE4507D2C732E9C00F61096 /* 9_of_spades.png */; };
+		BDE450B22C732EA200F61096 /* 13_of_clubs.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE4507E2C732E9C00F61096 /* 13_of_clubs.png */; };
+		BDE450B32C732EA200F61096 /* 8_of_diamonds.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE4507F2C732E9C00F61096 /* 8_of_diamonds.png */; };
+		BDE450B42C732EA200F61096 /* 14_of_clubs.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450802C732E9C00F61096 /* 14_of_clubs.png */; };
+		BDE450B52C732EA200F61096 /* 4_of_clubs.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450812C732E9D00F61096 /* 4_of_clubs.png */; };
+		BDE450B62C732EA200F61096 /* 12_of_spades.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450822C732E9D00F61096 /* 12_of_spades.png */; };
+		BDE450B72C732EA200F61096 /* 9_of_clubs.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450832C732E9D00F61096 /* 9_of_clubs.png */; };
+		BDE450B82C732EA200F61096 /* 2_of_spades.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450842C732E9D00F61096 /* 2_of_spades.png */; };
+		BDE450B92C732EA200F61096 /* 5_of_diamonds.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450852C732E9D00F61096 /* 5_of_diamonds.png */; };
+		BDE450BA2C732EA200F61096 /* 10_of_diamonds.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450862C732E9D00F61096 /* 10_of_diamonds.png */; };
+		BDE450BB2C732EA200F61096 /* 9_of_diamonds.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450872C732E9D00F61096 /* 9_of_diamonds.png */; };
+		BDE450BC2C732EA200F61096 /* 11_of_clubs.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450882C732E9E00F61096 /* 11_of_clubs.png */; };
+		BDE450BD2C732EA200F61096 /* 13_of_diamonds.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450892C732E9E00F61096 /* 13_of_diamonds.png */; };
+		BDE450BE2C732EA200F61096 /* 6_of_hearts.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE4508A2C732E9E00F61096 /* 6_of_hearts.png */; };
+		BDE450BF2C732EA200F61096 /* 11_of_diamonds.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE4508B2C732E9E00F61096 /* 11_of_diamonds.png */; };
+		BDE450C02C732EA200F61096 /* 7_of_hearts.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE4508C2C732E9E00F61096 /* 7_of_hearts.png */; };
+		BDE450C12C732EA200F61096 /* 6_of_clubs.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE4508D2C732E9E00F61096 /* 6_of_clubs.png */; };
+		BDE450C22C732EA200F61096 /* 7_of_diamonds.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE4508E2C732E9E00F61096 /* 7_of_diamonds.png */; };
+		BDE450C32C732EA200F61096 /* 4_of_hearts.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE4508F2C732E9F00F61096 /* 4_of_hearts.png */; };
+		BDE450C42C732EA200F61096 /* 2_of_hearts.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450902C732E9F00F61096 /* 2_of_hearts.png */; };
+		BDE450C52C732EA200F61096 /* 14_of_diamonds.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450912C732E9F00F61096 /* 14_of_diamonds.png */; };
+		BDE450C62C732EA200F61096 /* 9_of_hearts.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450922C732E9F00F61096 /* 9_of_hearts.png */; };
+		BDE450C72C732EA200F61096 /* 7_of_clubs.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450932C732E9F00F61096 /* 7_of_clubs.png */; };
+		BDE450C82C732EA200F61096 /* 8_of_clubs.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450942C732E9F00F61096 /* 8_of_clubs.png */; };
+		BDE450C92C732EA200F61096 /* 12_of_hearts.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450952C732E9F00F61096 /* 12_of_hearts.png */; };
+		BDE450CA2C732EA200F61096 /* 12_of_clubs.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450962C732E9F00F61096 /* 12_of_clubs.png */; };
+		BDE450CB2C732EA200F61096 /* 5_of_spades.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450972C732EA000F61096 /* 5_of_spades.png */; };
+		BDE450CC2C732EA200F61096 /* 13_of_spades.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450982C732EA000F61096 /* 13_of_spades.png */; };
+		BDE450CD2C732EA200F61096 /* 6_of_spades.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450992C732EA000F61096 /* 6_of_spades.png */; };
+		BDE450CE2C732EA200F61096 /* 4_of_diamonds.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE4509A2C732EA000F61096 /* 4_of_diamonds.png */; };
+		BDE450CF2C732EA200F61096 /* 10_of_hearts.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE4509B2C732EA000F61096 /* 10_of_hearts.png */; };
+		BDE450D02C732EA200F61096 /* 12_of_diamonds.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE4509C2C732EA000F61096 /* 12_of_diamonds.png */; };
+		BDE450D12C732EA200F61096 /* 14_of_spades.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE4509D2C732EA000F61096 /* 14_of_spades.png */; };
+		BDE450D22C732EA200F61096 /* 3_of_spades.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE4509E2C732EA000F61096 /* 3_of_spades.png */; };
+		BDE450D32C732EA200F61096 /* 10_of_clubs.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE4509F2C732EA100F61096 /* 10_of_clubs.png */; };
+		BDE450D42C732EA200F61096 /* 8_of_hearts.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450A02C732EA100F61096 /* 8_of_hearts.png */; };
+		BDE450D52C732EA200F61096 /* 14_of_hearts.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450A12C732EA100F61096 /* 14_of_hearts.png */; };
+		BDE450D62C732EA200F61096 /* 5_of_hearts.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450A22C732EA100F61096 /* 5_of_hearts.png */; };
+		BDE450D72C732EA200F61096 /* 4_of_spades.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450A32C732EA100F61096 /* 4_of_spades.png */; };
+		BDE450D82C732EA200F61096 /* 5_of_clubs.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450A42C732EA100F61096 /* 5_of_clubs.png */; };
+		BDE450D92C732EA200F61096 /* 3_of_clubs.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450A52C732EA100F61096 /* 3_of_clubs.png */; };
+		BDE450DA2C732EA200F61096 /* 6_of_diamonds.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450A62C732EA100F61096 /* 6_of_diamonds.png */; };
+		BDE450DB2C732EA200F61096 /* 2_of_clubs.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450A72C732EA200F61096 /* 2_of_clubs.png */; };
+		BDE450DC2C732EA200F61096 /* 11_of_spades.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450A82C732EA200F61096 /* 11_of_spades.png */; };
+		BDE450DD2C732EA200F61096 /* 3_of_diamonds.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450A92C732EA200F61096 /* 3_of_diamonds.png */; };
+		BDE450DE2C732EA200F61096 /* 8_of_spades.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE450AA2C732EA200F61096 /* 8_of_spades.png */; };
+		BDE450E32C73B1D500F61096 /* AudioPlayerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE450E22C73B1D500F61096 /* AudioPlayerHandler.swift */; };
+		BDE450E52C73B3FA00F61096 /* flip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BDE450E42C73B3FA00F61096 /* flip.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BD1917C42C726F9E0099F4A1 /* CardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD1917C72C726F9E0099F4A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD1917C92C726F9E0099F4A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BD1917CB2C726F9E0099F4A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD1917CE2C726F9E0099F4A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD1917D02C726FA20099F4A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD1917D32C726FA20099F4A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD1917D52C726FA20099F4A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD4B2CD92C7CE0B800119F23 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		BD4B2CDA2C7CE0B800119F23 /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
+		BD6A92AD2C77DCCC0015AF80 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BD6A92CE2C77E4F40015AF80 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BD6A92D12C77E5550015AF80 /* FirebasePhoneAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebasePhoneAuthManager.swift; sourceTree = "<group>"; };
+		BD6A92D32C78D90E0015AF80 /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
+		BDC0E7DE2C7BBE61000A62D6 /* Winner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Winner.swift; sourceTree = "<group>"; };
+		BDC0E7E02C7BCF79000A62D6 /* WinnersChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnersChartViewController.swift; sourceTree = "<group>"; };
+		BDE450592C727F4800F61096 /* LocalStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
+		BDE4505C2C727FB600F61096 /* FilesHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesHandler.swift; sourceTree = "<group>"; };
+		BDE450612C72807200F61096 /* MessageUi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageUi.swift; sourceTree = "<group>"; };
+		BDE450692C72813700F61096 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		BDE4506B2C72826E00F61096 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		BDE4506D2C7282BB00F61096 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		BDE4506F2C72830200F61096 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		BDE450712C72833B00F61096 /* GameResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultsViewController.swift; sourceTree = "<group>"; };
+		BDE450742C729F2700F61096 /* Gamer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gamer.swift; sourceTree = "<group>"; };
+		BDE450772C732E9B00F61096 /* 2_of_diamonds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2_of_diamonds.png; sourceTree = "<group>"; };
+		BDE450782C732E9B00F61096 /* 7_of_spades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7_of_spades.png; sourceTree = "<group>"; };
+		BDE450792C732E9C00F61096 /* 10_of_spades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10_of_spades.png; sourceTree = "<group>"; };
+		BDE4507A2C732E9C00F61096 /* 3_of_hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3_of_hearts.png; sourceTree = "<group>"; };
+		BDE4507B2C732E9C00F61096 /* 11_of_hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11_of_hearts.png; sourceTree = "<group>"; };
+		BDE4507C2C732E9C00F61096 /* 13_of_hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13_of_hearts.png; sourceTree = "<group>"; };
+		BDE4507D2C732E9C00F61096 /* 9_of_spades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9_of_spades.png; sourceTree = "<group>"; };
+		BDE4507E2C732E9C00F61096 /* 13_of_clubs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13_of_clubs.png; sourceTree = "<group>"; };
+		BDE4507F2C732E9C00F61096 /* 8_of_diamonds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8_of_diamonds.png; sourceTree = "<group>"; };
+		BDE450802C732E9C00F61096 /* 14_of_clubs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 14_of_clubs.png; sourceTree = "<group>"; };
+		BDE450812C732E9D00F61096 /* 4_of_clubs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4_of_clubs.png; sourceTree = "<group>"; };
+		BDE450822C732E9D00F61096 /* 12_of_spades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12_of_spades.png; sourceTree = "<group>"; };
+		BDE450832C732E9D00F61096 /* 9_of_clubs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9_of_clubs.png; sourceTree = "<group>"; };
+		BDE450842C732E9D00F61096 /* 2_of_spades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2_of_spades.png; sourceTree = "<group>"; };
+		BDE450852C732E9D00F61096 /* 5_of_diamonds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5_of_diamonds.png; sourceTree = "<group>"; };
+		BDE450862C732E9D00F61096 /* 10_of_diamonds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10_of_diamonds.png; sourceTree = "<group>"; };
+		BDE450872C732E9D00F61096 /* 9_of_diamonds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9_of_diamonds.png; sourceTree = "<group>"; };
+		BDE450882C732E9E00F61096 /* 11_of_clubs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11_of_clubs.png; sourceTree = "<group>"; };
+		BDE450892C732E9E00F61096 /* 13_of_diamonds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13_of_diamonds.png; sourceTree = "<group>"; };
+		BDE4508A2C732E9E00F61096 /* 6_of_hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6_of_hearts.png; sourceTree = "<group>"; };
+		BDE4508B2C732E9E00F61096 /* 11_of_diamonds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11_of_diamonds.png; sourceTree = "<group>"; };
+		BDE4508C2C732E9E00F61096 /* 7_of_hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7_of_hearts.png; sourceTree = "<group>"; };
+		BDE4508D2C732E9E00F61096 /* 6_of_clubs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6_of_clubs.png; sourceTree = "<group>"; };
+		BDE4508E2C732E9E00F61096 /* 7_of_diamonds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7_of_diamonds.png; sourceTree = "<group>"; };
+		BDE4508F2C732E9F00F61096 /* 4_of_hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4_of_hearts.png; sourceTree = "<group>"; };
+		BDE450902C732E9F00F61096 /* 2_of_hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2_of_hearts.png; sourceTree = "<group>"; };
+		BDE450912C732E9F00F61096 /* 14_of_diamonds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 14_of_diamonds.png; sourceTree = "<group>"; };
+		BDE450922C732E9F00F61096 /* 9_of_hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9_of_hearts.png; sourceTree = "<group>"; };
+		BDE450932C732E9F00F61096 /* 7_of_clubs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7_of_clubs.png; sourceTree = "<group>"; };
+		BDE450942C732E9F00F61096 /* 8_of_clubs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8_of_clubs.png; sourceTree = "<group>"; };
+		BDE450952C732E9F00F61096 /* 12_of_hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12_of_hearts.png; sourceTree = "<group>"; };
+		BDE450962C732E9F00F61096 /* 12_of_clubs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12_of_clubs.png; sourceTree = "<group>"; };
+		BDE450972C732EA000F61096 /* 5_of_spades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5_of_spades.png; sourceTree = "<group>"; };
+		BDE450982C732EA000F61096 /* 13_of_spades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13_of_spades.png; sourceTree = "<group>"; };
+		BDE450992C732EA000F61096 /* 6_of_spades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6_of_spades.png; sourceTree = "<group>"; };
+		BDE4509A2C732EA000F61096 /* 4_of_diamonds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4_of_diamonds.png; sourceTree = "<group>"; };
+		BDE4509B2C732EA000F61096 /* 10_of_hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10_of_hearts.png; sourceTree = "<group>"; };
+		BDE4509C2C732EA000F61096 /* 12_of_diamonds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12_of_diamonds.png; sourceTree = "<group>"; };
+		BDE4509D2C732EA000F61096 /* 14_of_spades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 14_of_spades.png; sourceTree = "<group>"; };
+		BDE4509E2C732EA000F61096 /* 3_of_spades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3_of_spades.png; sourceTree = "<group>"; };
+		BDE4509F2C732EA100F61096 /* 10_of_clubs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10_of_clubs.png; sourceTree = "<group>"; };
+		BDE450A02C732EA100F61096 /* 8_of_hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8_of_hearts.png; sourceTree = "<group>"; };
+		BDE450A12C732EA100F61096 /* 14_of_hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 14_of_hearts.png; sourceTree = "<group>"; };
+		BDE450A22C732EA100F61096 /* 5_of_hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5_of_hearts.png; sourceTree = "<group>"; };
+		BDE450A32C732EA100F61096 /* 4_of_spades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4_of_spades.png; sourceTree = "<group>"; };
+		BDE450A42C732EA100F61096 /* 5_of_clubs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5_of_clubs.png; sourceTree = "<group>"; };
+		BDE450A52C732EA100F61096 /* 3_of_clubs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3_of_clubs.png; sourceTree = "<group>"; };
+		BDE450A62C732EA100F61096 /* 6_of_diamonds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6_of_diamonds.png; sourceTree = "<group>"; };
+		BDE450A72C732EA200F61096 /* 2_of_clubs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2_of_clubs.png; sourceTree = "<group>"; };
+		BDE450A82C732EA200F61096 /* 11_of_spades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11_of_spades.png; sourceTree = "<group>"; };
+		BDE450A92C732EA200F61096 /* 3_of_diamonds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3_of_diamonds.png; sourceTree = "<group>"; };
+		BDE450AA2C732EA200F61096 /* 8_of_spades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8_of_spades.png; sourceTree = "<group>"; };
+		BDE450E22C73B1D500F61096 /* AudioPlayerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerHandler.swift; sourceTree = "<group>"; };
+		BDE450E42C73B3FA00F61096 /* flip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = flip.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD1917C12C726F9E0099F4A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD6A92BB2C77E10C0015AF80 /* FirebaseAuth in Frameworks */,
+				BD6A92B52C77E10C0015AF80 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				BD6A92C52C77E10C0015AF80 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD1917BB2C726F9E0099F4A1 = {
+			isa = PBXGroup;
+			children = (
+				BD1917C62C726F9E0099F4A1 /* CardGame */,
+				BD1917C52C726F9E0099F4A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD1917C52C726F9E0099F4A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD1917C42C726F9E0099F4A1 /* CardGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD1917C62C726F9E0099F4A1 /* CardGame */ = {
+			isa = PBXGroup;
+			children = (
+				BD3015212C7C70920058CB8A /* Ui */,
+				BD6A92D02C77E53A0015AF80 /* Firebase */,
+				BDE450E12C73B1AD00F61096 /* AudioPlayer */,
+				BDE450DF2C73B11E00F61096 /* sounds */,
+				BDE450762C732E6900F61096 /* CardsImages */,
+				BDE450732C729F0F00F61096 /* Objects */,
+				BDE450662C72810900F61096 /* Constants */,
+				BDE450632C7280C600F61096 /* ViewControllers */,
+				BDE4505E2C72804F00F61096 /* MessageUi */,
+				BDE4505B2C727F8000F61096 /* Files */,
+				BDE450562C727EC300F61096 /* Storage */,
+				BD1917C72C726F9E0099F4A1 /* AppDelegate.swift */,
+				BD1917C92C726F9E0099F4A1 /* SceneDelegate.swift */,
+				BD6A92AD2C77DCCC0015AF80 /* GoogleService-Info.plist */,
+				BD1917CB2C726F9E0099F4A1 /* ViewController.swift */,
+				BD1917CD2C726F9E0099F4A1 /* Main.storyboard */,
+				BD1917D02C726FA20099F4A1 /* Assets.xcassets */,
+				BD1917D22C726FA20099F4A1 /* LaunchScreen.storyboard */,
+				BD1917D52C726FA20099F4A1 /* Info.plist */,
+			);
+			path = CardGame;
+			sourceTree = "<group>";
+		};
+		BD3015212C7C70920058CB8A /* Ui */ = {
+			isa = PBXGroup;
+			children = (
+				BD3015222C7C70980058CB8A /* Cells */,
+			);
+			path = Ui;
+			sourceTree = "<group>";
+		};
+		BD3015222C7C70980058CB8A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BD4B2CD92C7CE0B800119F23 /* MyTableViewCell.swift */,
+				BD4B2CDA2C7CE0B800119F23 /* MyTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BD6A92D02C77E53A0015AF80 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				BD6A92D12C77E5550015AF80 /* FirebasePhoneAuthManager.swift */,
+				BD6A92D32C78D90E0015AF80 /* FirestoreManager.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		BDE450562C727EC300F61096 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				BDE450592C727F4800F61096 /* LocalStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		BDE4505B2C727F8000F61096 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDE4505C2C727FB600F61096 /* FilesHandler.swift */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		BDE4505E2C72804F00F61096 /* MessageUi */ = {
+			isa = PBXGroup;
+			children = (
+				BDE450612C72807200F61096 /* MessageUi.swift */,
+			);
+			path = MessageUi;
+			sourceTree = "<group>";
+		};
+		BDE450632C7280C600F61096 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BDE4506B2C72826E00F61096 /* NavigationController.swift */,
+				BD6A92CE2C77E4F40015AF80 /* LoginViewController.swift */,
+				BDE4506D2C7282BB00F61096 /* RegisterViewController.swift */,
+				BDE4506F2C72830200F61096 /* MainScreenViewController.swift */,
+				BDE450712C72833B00F61096 /* GameResultsViewController.swift */,
+				BDC0E7E02C7BCF79000A62D6 /* WinnersChartViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BDE450662C72810900F61096 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				BDE450692C72813700F61096 /* AppConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		BDE450732C729F0F00F61096 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				BDE450742C729F2700F61096 /* Gamer.swift */,
+				BDC0E7DE2C7BBE61000A62D6 /* Winner.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		BDE450762C732E6900F61096 /* CardsImages */ = {
+			isa = PBXGroup;
+			children = (
+				BDE450A72C732EA200F61096 /* 2_of_clubs.png */,
+				BDE450772C732E9B00F61096 /* 2_of_diamonds.png */,
+				BDE450902C732E9F00F61096 /* 2_of_hearts.png */,
+				BDE450842C732E9D00F61096 /* 2_of_spades.png */,
+				BDE450A52C732EA100F61096 /* 3_of_clubs.png */,
+				BDE450A92C732EA200F61096 /* 3_of_diamonds.png */,
+				BDE4507A2C732E9C00F61096 /* 3_of_hearts.png */,
+				BDE4509E2C732EA000F61096 /* 3_of_spades.png */,
+				BDE450812C732E9D00F61096 /* 4_of_clubs.png */,
+				BDE4509A2C732EA000F61096 /* 4_of_diamonds.png */,
+				BDE4508F2C732E9F00F61096 /* 4_of_hearts.png */,
+				BDE450A32C732EA100F61096 /* 4_of_spades.png */,
+				BDE450A42C732EA100F61096 /* 5_of_clubs.png */,
+				BDE450852C732E9D00F61096 /* 5_of_diamonds.png */,
+				BDE450A22C732EA100F61096 /* 5_of_hearts.png */,
+				BDE450972C732EA000F61096 /* 5_of_spades.png */,
+				BDE4508D2C732E9E00F61096 /* 6_of_clubs.png */,
+				BDE450A62C732EA100F61096 /* 6_of_diamonds.png */,
+				BDE4508A2C732E9E00F61096 /* 6_of_hearts.png */,
+				BDE450992C732EA000F61096 /* 6_of_spades.png */,
+				BDE450932C732E9F00F61096 /* 7_of_clubs.png */,
+				BDE4508E2C732E9E00F61096 /* 7_of_diamonds.png */,
+				BDE4508C2C732E9E00F61096 /* 7_of_hearts.png */,
+				BDE450782C732E9B00F61096 /* 7_of_spades.png */,
+				BDE450942C732E9F00F61096 /* 8_of_clubs.png */,
+				BDE4507F2C732E9C00F61096 /* 8_of_diamonds.png */,
+				BDE450A02C732EA100F61096 /* 8_of_hearts.png */,
+				BDE450AA2C732EA200F61096 /* 8_of_spades.png */,
+				BDE450832C732E9D00F61096 /* 9_of_clubs.png */,
+				BDE450872C732E9D00F61096 /* 9_of_diamonds.png */,
+				BDE450922C732E9F00F61096 /* 9_of_hearts.png */,
+				BDE4507D2C732E9C00F61096 /* 9_of_spades.png */,
+				BDE4509F2C732EA100F61096 /* 10_of_clubs.png */,
+				BDE450862C732E9D00F61096 /* 10_of_diamonds.png */,
+				BDE4509B2C732EA000F61096 /* 10_of_hearts.png */,
+				BDE450792C732E9C00F61096 /* 10_of_spades.png */,
+				BDE450882C732E9E00F61096 /* 11_of_clubs.png */,
+				BDE4508B2C732E9E00F61096 /* 11_of_diamonds.png */,
+				BDE4507B2C732E9C00F61096 /* 11_of_hearts.png */,
+				BDE450A82C732EA200F61096 /* 11_of_spades.png */,
+				BDE450962C732E9F00F61096 /* 12_of_clubs.png */,
+				BDE4509C2C732EA000F61096 /* 12_of_diamonds.png */,
+				BDE450952C732E9F00F61096 /* 12_of_hearts.png */,
+				BDE450822C732E9D00F61096 /* 12_of_spades.png */,
+				BDE4507E2C732E9C00F61096 /* 13_of_clubs.png */,
+				BDE450892C732E9E00F61096 /* 13_of_diamonds.png */,
+				BDE4507C2C732E9C00F61096 /* 13_of_hearts.png */,
+				BDE450982C732EA000F61096 /* 13_of_spades.png */,
+				BDE450802C732E9C00F61096 /* 14_of_clubs.png */,
+				BDE450912C732E9F00F61096 /* 14_of_diamonds.png */,
+				BDE450A12C732EA100F61096 /* 14_of_hearts.png */,
+				BDE4509D2C732EA000F61096 /* 14_of_spades.png */,
+			);
+			path = CardsImages;
+			sourceTree = "<group>";
+		};
+		BDE450DF2C73B11E00F61096 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				BDE450E42C73B3FA00F61096 /* flip.mp3 */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+		BDE450E12C73B1AD00F61096 /* AudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				BDE450E22C73B1D500F61096 /* AudioPlayerHandler.swift */,
+			);
+			path = AudioPlayer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD1917C32C726F9E0099F4A1 /* CardGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD1917D82C726FA20099F4A1 /* Build configuration list for PBXNativeTarget "CardGame" */;
+			buildPhases = (
+				BD1917C02C726F9E0099F4A1 /* Sources */,
+				BD1917C12C726F9E0099F4A1 /* Frameworks */,
+				BD1917C22C726F9E0099F4A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CardGame;
+			packageProductDependencies = (
+				BD6A92B42C77E10C0015AF80 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				BD6A92BA2C77E10C0015AF80 /* FirebaseAuth */,
+				BD6A92C42C77E10C0015AF80 /* FirebaseFirestore */,
+			);
+			productName = CardGame;
+			productReference = BD1917C42C726F9E0099F4A1 /* CardGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD1917BC2C726F9E0099F4A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					BD1917C32C726F9E0099F4A1 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = BD1917BF2C726F9E0099F4A1 /* Build configuration list for PBXProject "CardGame" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD1917BB2C726F9E0099F4A1;
+			packageReferences = (
+				BD6A92AF2C77E10C0015AF80 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = BD1917C52C726F9E0099F4A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD1917C32C726F9E0099F4A1 /* CardGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD1917C22C726F9E0099F4A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDE450BA2C732EA200F61096 /* 10_of_diamonds.png in Resources */,
+				BDE450CD2C732EA200F61096 /* 6_of_spades.png in Resources */,
+				BDE450BF2C732EA200F61096 /* 11_of_diamonds.png in Resources */,
+				BDE450C92C732EA200F61096 /* 12_of_hearts.png in Resources */,
+				BDE450AB2C732EA200F61096 /* 2_of_diamonds.png in Resources */,
+				BDE450B42C732EA200F61096 /* 14_of_clubs.png in Resources */,
+				BDE450CE2C732EA200F61096 /* 4_of_diamonds.png in Resources */,
+				BDE450C72C732EA200F61096 /* 7_of_clubs.png in Resources */,
+				BDE450BB2C732EA200F61096 /* 9_of_diamonds.png in Resources */,
+				BDE450DE2C732EA200F61096 /* 8_of_spades.png in Resources */,
+				BDE450D72C732EA200F61096 /* 4_of_spades.png in Resources */,
+				BD6A92AE2C77DCCC0015AF80 /* GoogleService-Info.plist in Resources */,
+				BDE450DC2C732EA200F61096 /* 11_of_spades.png in Resources */,
+				BDE450C02C732EA200F61096 /* 7_of_hearts.png in Resources */,
+				BD1917D42C726FA20099F4A1 /* LaunchScreen.storyboard in Resources */,
+				BDE450BE2C732EA200F61096 /* 6_of_hearts.png in Resources */,
+				BDE450BC2C732EA200F61096 /* 11_of_clubs.png in Resources */,
+				BDE450DA2C732EA200F61096 /* 6_of_diamonds.png in Resources */,
+				BDE450C22C732EA200F61096 /* 7_of_diamonds.png in Resources */,
+				BDE450DD2C732EA200F61096 /* 3_of_diamonds.png in Resources */,
+				BDE450D52C732EA200F61096 /* 14_of_hearts.png in Resources */,
+				BDE450D02C732EA200F61096 /* 12_of_diamonds.png in Resources */,
+				BDE450D32C732EA200F61096 /* 10_of_clubs.png in Resources */,
+				BDE450D12C732EA200F61096 /* 14_of_spades.png in Resources */,
+				BDE450C52C732EA200F61096 /* 14_of_diamonds.png in Resources */,
+				BDE450B82C732EA200F61096 /* 2_of_spades.png in Resources */,
+				BDE450B52C732EA200F61096 /* 4_of_clubs.png in Resources */,
+				BDE450C82C732EA200F61096 /* 8_of_clubs.png in Resources */,
+				BDE450CC2C732EA200F61096 /* 13_of_spades.png in Resources */,
+				BDE450C42C732EA200F61096 /* 2_of_hearts.png in Resources */,
+				BDE450C32C732EA200F61096 /* 4_of_hearts.png in Resources */,
+				BDE450B62C732EA200F61096 /* 12_of_spades.png in Resources */,
+				BDE450D22C732EA200F61096 /* 3_of_spades.png in Resources */,
+				BDE450CF2C732EA200F61096 /* 10_of_hearts.png in Resources */,
+				BD1917D12C726FA20099F4A1 /* Assets.xcassets in Resources */,
+				BD4B2CDC2C7CE0B800119F23 /* MyTableViewCell.xib in Resources */,
+				BDE450B72C732EA200F61096 /* 9_of_clubs.png in Resources */,
+				BDE450D82C732EA200F61096 /* 5_of_clubs.png in Resources */,
+				BDE450BD2C732EA200F61096 /* 13_of_diamonds.png in Resources */,
+				BDE450CB2C732EA200F61096 /* 5_of_spades.png in Resources */,
+				BDE450B22C732EA200F61096 /* 13_of_clubs.png in Resources */,
+				BDE450AD2C732EA200F61096 /* 10_of_spades.png in Resources */,
+				BDE450C12C732EA200F61096 /* 6_of_clubs.png in Resources */,
+				BDE450E52C73B3FA00F61096 /* flip.mp3 in Resources */,
+				BDE450B12C732EA200F61096 /* 9_of_spades.png in Resources */,
+				BDE450D42C732EA200F61096 /* 8_of_hearts.png in Resources */,
+				BDE450D62C732EA200F61096 /* 5_of_hearts.png in Resources */,
+				BD1917CF2C726F9E0099F4A1 /* Main.storyboard in Resources */,
+				BDE450AE2C732EA200F61096 /* 3_of_hearts.png in Resources */,
+				BDE450B92C732EA200F61096 /* 5_of_diamonds.png in Resources */,
+				BDE450AC2C732EA200F61096 /* 7_of_spades.png in Resources */,
+				BDE450CA2C732EA200F61096 /* 12_of_clubs.png in Resources */,
+				BDE450AF2C732EA200F61096 /* 11_of_hearts.png in Resources */,
+				BDE450DB2C732EA200F61096 /* 2_of_clubs.png in Resources */,
+				BDE450D92C732EA200F61096 /* 3_of_clubs.png in Resources */,
+				BDE450C62C732EA200F61096 /* 9_of_hearts.png in Resources */,
+				BDE450B32C732EA200F61096 /* 8_of_diamonds.png in Resources */,
+				BDE450B02C732EA200F61096 /* 13_of_hearts.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD1917C02C726F9E0099F4A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD6A92CF2C77E4F40015AF80 /* LoginViewController.swift in Sources */,
+				BDE4506E2C7282BB00F61096 /* RegisterViewController.swift in Sources */,
+				BDE4506C2C72826E00F61096 /* NavigationController.swift in Sources */,
+				BDE450622C72807200F61096 /* MessageUi.swift in Sources */,
+				BDE4505D2C727FB600F61096 /* FilesHandler.swift in Sources */,
+				BDE4505A2C727F4800F61096 /* LocalStorage.swift in Sources */,
+				BDC0E7DF2C7BBE61000A62D6 /* Winner.swift in Sources */,
+				BDE450702C72830200F61096 /* MainScreenViewController.swift in Sources */,
+				BDC0E7E12C7BCF79000A62D6 /* WinnersChartViewController.swift in Sources */,
+				BDE450752C729F2700F61096 /* Gamer.swift in Sources */,
+				BDE4506A2C72813700F61096 /* AppConstants.swift in Sources */,
+				BDE450E32C73B1D500F61096 /* AudioPlayerHandler.swift in Sources */,
+				BD4B2CDB2C7CE0B800119F23 /* MyTableViewCell.swift in Sources */,
+				BD6A92D22C77E5550015AF80 /* FirebasePhoneAuthManager.swift in Sources */,
+				BD1917CC2C726F9E0099F4A1 /* ViewController.swift in Sources */,
+				BD1917C82C726F9E0099F4A1 /* AppDelegate.swift in Sources */,
+				BD1917CA2C726F9E0099F4A1 /* SceneDelegate.swift in Sources */,
+				BDE450722C72833B00F61096 /* GameResultsViewController.swift in Sources */,
+				BD6A92D42C78D90E0015AF80 /* FirestoreManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BD1917CD2C726F9E0099F4A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD1917CE2C726F9E0099F4A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD1917D22C726FA20099F4A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD1917D32C726FA20099F4A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD1917D62C726FA20099F4A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD1917D72C726FA20099F4A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD1917D92C726FA20099F4A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9MX6PX9DA5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CardGame/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location is needed for gamer side pick!";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = liron.barshehet.com.CardGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD1917DA2C726FA20099F4A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9MX6PX9DA5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CardGame/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location is needed for gamer side pick!";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = liron.barshehet.com.CardGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD1917BF2C726F9E0099F4A1 /* Build configuration list for PBXProject "CardGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD1917D62C726FA20099F4A1 /* Debug */,
+				BD1917D72C726FA20099F4A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD1917D82C726FA20099F4A1 /* Build configuration list for PBXNativeTarget "CardGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD1917D92C726FA20099F4A1 /* Debug */,
+				BD1917DA2C726FA20099F4A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BD6A92AF2C77E10C0015AF80 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BD6A92B42C77E10C0015AF80 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD6A92AF2C77E10C0015AF80 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		BD6A92BA2C77E10C0015AF80 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD6A92AF2C77E10C0015AF80 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		BD6A92C42C77E10C0015AF80 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD6A92AF2C77E10C0015AF80 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BD1917BC2C726F9E0099F4A1 /* Project object */;
+}
